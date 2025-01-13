@@ -9,6 +9,7 @@
         body {
             background-color: #9bcece;
             justify-content: center;
+            display: flex;
         }
         /* Top navigation bar */
 
@@ -18,12 +19,12 @@
        .navbar {
            display: flex;
            justify-content: space-around;
-           background-color: #156464;
+           background-color: #0a4646;
            padding: 5px;
        }
        .navbar button {
            background-color: #444;
-           color: rgb(13, 151, 140);
+           color: rgb(11, 121, 111);
            border: none;
            padding: 1px 2px;
            cursor: pointer;
@@ -57,6 +58,7 @@
 
        .containerx {
         padding-right: 5px;
+        align-self: start;
         justify-content: center;
        
         padding: 0;
@@ -71,7 +73,13 @@
         
         }
         .weatherwidget-io {
-        height: 25px;
+        height: 15px;
+        }
+
+        .sunset {
+            height: 100px;
+            align-content: center;
+            justify-content: center;
         }
        
    </style>
@@ -81,15 +89,17 @@
 
 
     
+    
+    <div class="containerx">
 
 
  
         <div>
       
-            <a class="weatherwidget-io" href="https://forecast7.com/en/30d37n88d56/pascagoula/?unit=us" data-label_1="PASCAGOULA" data-theme="original" >PASCAGOULA</a>
-            <script>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/30d37n88d56/pascagoula/?unit=us" data-label_1="PASCAGOULA" data-theme="gray" >PASCAGOULA</a>
+                <script>
                 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-            </script>
+                </script>
         </div>
         <div class="navbar">
             <a href="https://bamaone251.github.io/WXdash/" class="button" target="_blank">BAMAONEWX</a>
@@ -98,19 +108,19 @@
             <a href="https://weather.cod.edu/satrad/nexrad/?parms=MOB-N0B-0-24-100-usa-ww" class="button" target="_blank" zoom="1.4">RADAR</a>
            
         </div>
-        <div class="containerx">
+       
          
-           <iframe width="99%" height="350" src="radar.html" frameborder="0"></iframe>
+            <iframe width="95%" height="350" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=mph&zoom=5&overlay=radar&product=radar&level=surface&lat=30.524&lon=-87.847&message=true" frameborder="0"></iframe>
         <li></li>
            
           
 
-            <iframe width="99%" height="350" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=30.52&lon=-88.861&message=true" frameborder="0"></iframe>
+            <iframe width="95%" height="350" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface&lat=30.52&lon=-88.861&message=true" frameborder="0"></iframe>
 
          
                 <script type="text/javascript">
                     // Map appearance
-                    var width="100%";         // width in pixels or percentage
+                    var width="95%";         // width in pixels or percentage
                     var height="100%";         // height in pixels
                     var latitude="30.10";     // center latitude (decimal degrees)
                     var longitude="-88.6452";    // center longitude (decimal degrees)
@@ -133,17 +143,17 @@
     <div class="tides">
      
 
-        <img width="100%" height="150" src="https://www.tideschart.com/tide-charts/en/Pascagoula-Mississippi-Sound-Jackson-County-Mississippi-United-States-tide-chart-30031638-ft.png">
+        <img width="400vw" height="150" src="https://www.tideschart.com/tide-charts/en/Pascagoula-Mississippi-Sound-Jackson-County-Mississippi-United-States-tide-chart-30031638-ft.png">
 
              
         
-        <img width="100%" height="150" src="https://www.tideschart.com/tide-charts/en/Port-of-Pascagoula-Jackson-County-Mississippi-United-States-tide-chart-30014232-ft.png">
+        <img width="400vw" height="150" src="https://www.tideschart.com/tide-charts/en/Port-of-Pascagoula-Jackson-County-Mississippi-United-States-tide-chart-30014232-ft.png">
         
        
     </div>
   
     <div class="sunset">
-        <a href="https://time.is/Fairhope" id="time_is_link" rel="nofollow" style="font-size:46px"></a>
+        <a href="https://time.is/Fairhope" id="time_is_link" rel="nofollow" style="font-size:16px"></a>
         <span id="Fairhope_z123" style="font-size:46px"></span>
         <script src="//widget.time.is/en.js"></script>
         <script>
